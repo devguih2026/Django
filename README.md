@@ -32,32 +32,4 @@ app_curso: Catálogo de cursos disponíveis.
 
 app_funcionario_cursos: Tabela intermediária de relacionamento.
 
-🚀 Como Executar o Projeto
-1. Clonar e Configurar Ambiente
-Bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/nome-do-projeto.git
 
-# Entre na pasta
-cd nome-do-projeto
-
-# Crie e ative o ambiente virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-2. Instalar Dependências
-Bash
-pip install django djangorestframework mysqlclient
-3. Configurar o Banco de Dados
-Certifique-se de que o seu servidor MySQL está rodando e crie o banco:
-
-SQL
-CREATE DATABASE biblioteca_django;
-4. Migrações e Superusuário
-Bash
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
-5. Rodar o Servidor
-Bash
-python manage.py runserver
